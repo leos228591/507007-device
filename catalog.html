@@ -7,7 +7,10 @@
   <body>
   	<header class="header"><a class="logo">device</a>
   		<div class="header-top">
-  			<!-- Тут, как я понимаю, форма для поиска -->
+  			<form class="search">
+                <input class="search-form" placeholder="Поиск по сайту" type="search"/>
+                <button class="button-search">Найти</button>
+            </form>
   			<button class="serch-button"> Найти </button>
   			<nav class="nav-of-user">
   				<a class="user-profile" href="#">Войти</a>
@@ -54,7 +57,26 @@
             <div class="left-column">
                 <section class="shop-filter">
                     <span class="shop-filter-title">Фильтр</span>
-                    <!-- Тут формы -->
+                    <form class="form-filter" method="post">
+                        <fieldset class="filter-group">
+                            <legend class="form-filter-title">Стоимость</legend>
+                            <label class="filter-number">От 0<input type="range" min="0" max="5000" step="1"/>До 5000</label>
+                        </fieldset>
+                        <fieldset class="filter-group">
+                            <legend class="form-filter-title">Цвет</legend>
+                            <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="color" value="black" checked />Черный</label>
+                            <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="color" value="white" />Белый</label>
+                            <label class="filter-label"><input class="filter-сheckbox" type="checkbox" name="color" value="blue" checked/>Синий</label>
+                            <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="color" value="red" checked/>Красный</label>
+                            <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="color" value="pink"/>Розовый</label>
+                        </fieldset>
+                        <fieldset class="filter-group">
+                            <legend class="form-filter-title">Bluetooth</legend>
+                            <label class="filter-label"><input class="filter-radio" type="radio" name="bluetooth" value="with"/>Есть</label>
+                            <label class="filter-label"><input class="filter-radio" type="radio" name="bluetooth" value="without"/>Нет</label>
+                        </fieldset>
+                    </form>
+
                     <button class="button">Показать</button>
                 </section>
             </div>
@@ -70,7 +92,7 @@
                 <section class="chop-catalog">
                     <section class="shop-catalog-list">
                         <article class="shop-item">
-                            <img src="" class="shop-item-img">
+                            <img src="img/catalog-item-1.jpg" class="shop-item-img">
                             <div class="chop-catalog-text">
                                 <h2 class="catalog-text-title">Любительская селфи палка</h2>
                                 <span class="catalog-text-price">500 р.</span>
@@ -82,7 +104,7 @@
                         </article>
 
                         <article class="shop-item">
-                            <img src="" class="shop-item-img">
+                            <img src="img/catalog-item-2.jpg" class="shop-item-img">
                             <div class="chop-catalog-text">
                                 <h2 class="catalog-text-title">Профессиональная селфи-палка</h2>
                                 <span class="catalog-text-price">1500 р.</span>
@@ -94,7 +116,7 @@
                         </article>
 
                         <article class="shop-item">
-                            <img src="" class="shop-item-img">
+                            <img src="img/catalog-item-3.jpg" class="shop-item-img">
                             <div class="chop-catalog-text">
                                 <h2 class="catalog-text-title">Непотопляемая селфи-палка</h2>
                                 <span class="catalog-text-price">2500 р.</span>
@@ -106,7 +128,7 @@
                         </article>
 
                         <article class="shop-item">
-                            <img src="" class="shop-item-img">
+                            <img src="img/catalog-item-4.jpg" class="shop-item-img">
                             <div class="chop-catalog-text">
                                 <h2 class="catalog-text-title">Селфи-палка "Следуй за мной"</h2>
                                 <span class="catalog-text-price">4900 р.</span>
