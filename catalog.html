@@ -3,46 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  	<header class="header"><a class="logo">device</a>
-  		<div class="header-top">
-  			<form class="search">
-                <input class="search-form" placeholder="Поиск по сайту" type="search"/>
-                <button class="button-search">Найти</button>
-            </form>
-  			<button class="serch-button"> Найти </button>
-  			<nav class="nav-of-user">
-  				<a class="user-profile" href="#">Войти</a>
-  				<a class="user-compare" href="#">Сравнить</a>
-  				<a class="user-basket" href="#">Корзина</a>
-  			</nav>
-  		</div>
-  		<div class="header-bottom">
-  			<ul class="nav-of-item">
-  				<li class="nav-of-item-catalog"><a class="nav-of-item-link" href="#">Каталог товаров</a>
-  					<div class="nav-of-item-catalog-menu">
-  						<ul class="catalog-menu-list">
-  							<li class="catalog-menu-item"><a class="catalog-link" href="#">Виртуальная реальность</a></li>
-  							<li class="catalog-menu-item"><a class="catalog-link" href="#">Моноподы для селфи</a></li>
-  							<li class="catalog-menu-item"><a class="catalog-link" href="#">Экшн-камера</a></li>
-  						</ul>
-  						<ul class="catalog-menu-list">
-  							<li class="catalog-menu-item"><a class="catalog-link" href="#">Фитнесс-браслет</a></li>
-  							<li class="catalog-menu-item"><a class="catalog-link" href="#">Умные часы</a></li>
-  						</ul>
-  						<ul>
-  							<li class="catalog-menu-item"><a class="catalog-link" href="#">Квадрокоптеры</a></li>
-  						</ul>
-  					</div>
-  				</li>
-  				<li class="nav-of-item-catalog"><a class="nav-of-item-link" href="#">Доставка</a>
-  				<li class="nav-of-item-catalog"><a class="nav-of-item-link" href="#">Гарантия</a>
-  				<li class="nav-of-item-catalog"><a class="nav-of-item-link" href="#">Контакты</a>
-  			</ul>
-  		</div>
-  	</header>
 
+  <div class="wrap">
+    <header class="header"><a class="logo logo-header">device</a>
+      <div class="header-top">
+        <form class="search">
+          <input class="search-form" placeholder="Поиск по сайту" type="search"/>
+        <button class="button-search">Найти</button>
+        </form>
+        <nav class="nav-of-user">
+          <div class="profile">
+          <a class="user-profile" href="#">Войти</a>
+          </div>
+          <a class="user-link user-compare" href="#">Сравнить</a>
+          <a class="user-link user-basket" href="#">Корзина</a>
+        </nav>
+      </div>
+      <div class="header-bottom">
+        <ul class="nav-of-item">
+          <li class="item-navigation nav-of-item-catalog"><a class="nav-of-item-link" href="#">Каталог товаров</a>
+            <div class="nav-of-item-catalog-menu">
+
+            <ul class="catalog-menu-list">
+                <li class="catalog-menu-item"><a class="catalog-link" href="#">Виртуальная реальность</a></li>
+                <li class="catalog-menu-item"><a class="catalog-link" href="#">Моноподы для селфи</a></li>
+                <li class="catalog-menu-item"><a class="catalog-link" href="#">Экшн-камера</a></li>
+              </ul>
+              <ul class="catalog-menu-list">
+                <li class="catalog-menu-item"><a class="catalog-link" href="#">Фитнесс-браслет</a></li>
+                <li class="catalog-menu-item"><a class="catalog-link" href="#">Умные часы</a></li>
+              </ul>
+              <ul class="catalog-menu-list">
+                <li class="catalog-menu-item"><a class="catalog-link" href="#">Квадрокоптеры</a></li>
+              </ul>
+
+            </div>
+          </li>
+          <li class="item-navigation"><a class="nav-of-item-link" href="#">Доставка</a>
+          <li class="item-navigation"><a class="nav-of-item-link" href="#">Гарантия</a>
+          <li class="item-navigation"><a class="nav-of-item-link" href="#">Контакты</a>
+        </ul>
+      </div>
+    </header>
+    </div>
 
   	<main class="catslog-menu">
         <header class="catalog-heder">
@@ -154,34 +161,36 @@
         </section>
   	</main>
 
-  	<footer class="footer">
-  		<div class="footer-block">
-  			<div class="footer-top">
-  				<a href="#" class="logo footer-logo">Device</a>
-  				<nav class="footer-user-nav">
-		  			<a class="user-profile footer-user-profile" href="#">Войти</a>
-		  			<a class="user-compare footer-user-compare" href="#">Сравнить</a>
-		  			<a class="user-basket footer-user-basket" href="#">Корзина</a>
-  				</nav>
-  			</div>
-  			<div class="footer-mid">
-  				<p class="address">г. Москва, ул. Строителей, 15</p>
-  				<ul class="footer-info">
-  					<li><a href="#" class="footer-info-item">Доставка</a></li>
-  					<li><a href="#" class="footer-info-item">Гарантия</a></li>
-  					<li><a href="#" class="footer-info-item">Контакты</a></li>
-  				</ul>
-  				<p class="number">Тел.: <a href="#" class="number-link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-  			</div>
-  			<div class="footer-bot">
-  				<div class="social">
-  					<a href="#" class="social-fb">Facebook</a>
-  					<a href="#" class="social-in">Instagramm</a>
-  					<a href="#" class="social-tw">Twitter</a>
-  				</div>
-  				<a class="html-academy" href="#">htmlacademy</a></div>
-  			</div>
-  		</div>
-  	</footer>
+      <footer class="footer">
+      <div class="wrap footer-block">
+        <div class="footer-top">
+          <a href="#" class="logo footer-logo">Device</a>
+          <nav class="footer-user-nav">
+            <div class="profile-footer">
+              <a class="user-profile footer-user-profile" href="#">Войти</a>
+            </div>>
+            <a class="user-compare footer-user-compare link-footer user-link" href="#">Сравнить</a>
+            <a class="user-basket footer-user-basket link-footer user-link" href="#">Корзина</a>
+          </nav>
+        </div>
+        <div class="footer-mid">
+          <p class="address">г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-info">
+            <li><a href="#" class="footer-info-item">Доставка</a></li>
+            <li><a href="#" class="footer-info-item">Гарантия</a></li>
+            <li><a href="#" class="footer-info-item">Контакты</a></li>
+          </ul>
+          <p class="number">Тел.: <a href="#" class="number-link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+        </div>
+        <div class="footer-bot">
+          <div class="social">
+            <a href="#" class="social-fb">Facebook</a>
+            <a href="#" class="social-in">Instagramm</a>
+            <a href="#" class="social-tw">Twitter</a>
+          </div>
+          <a class="html-academy" href="#">htmlacademy</a></div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
