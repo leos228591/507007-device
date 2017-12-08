@@ -1964,12 +1964,10 @@ img {
 	width: 60%;
 	height: 2px;
 	background: #91c92f;
-	z-index: 3;
 }
 
 .pawl-min {
 	left: -8px;
-	z-index: 2;
 }
 
 .pawl-round:active {
@@ -1977,7 +1975,7 @@ img {
 	width: 20px;
 	height: 20px;
 	box-shadow: 0 1px 0px rgb(218,218,218);
-	border: 9px solid #eeeeee;
+	border: 9px solid #ffffff;
 	border-radius: 10px;
 	background: #ababab;
 	cursor: pointer;
@@ -2002,6 +2000,7 @@ img {
 	margin-left: 50px;
 	max-height: 70px;
 	width: 560px;
+	align-items: baseline;
 
 	-webkit-box-orient: horizontal;
 	-webkit-box-pack: justify;
